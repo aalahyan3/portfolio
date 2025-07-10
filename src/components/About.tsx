@@ -60,7 +60,7 @@ function About() {
             </div>
         </div>
         <div className='mt-4'>
-            <h3 className='text-[#a4a4a4] text-sm md:text-base'>some programming languages and technologies i recently used:</h3>
+            <h3 className={` ${Inter.className}text-[#a4a4a4] text-sm md:text-base`}>some programming languages and technologies i recently used:</h3>
             <div className='flex flex-wrap mt-4'>
                 {programming_languages.map((lang, index)=> (
                     <Programminglanguage language={lang.name} link={lang.link} key={index}/>
