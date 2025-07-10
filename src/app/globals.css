@@ -45,3 +45,13 @@ body {
   box-shadow: 5px 3px 0px 0px #5E52FF;
 }
 
+.image-box{
+  box-shadow: 3px 3px 0 3px #5e52ffb4;
+  border-radius: 10px;
+  padding: 0 10px 10px 0;
+  transition: all ease 300ms;
+}
+.image-box:hover{
+
+
+}

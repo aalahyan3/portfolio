@@ -1,9 +1,10 @@
 import React from 'react'
 import {Inter, FiraCode, Quantico} from '@/fonts/fonts'
 import VioletButton from './Button'
+import { ArrowDownTrayIcon } from '@heroicons/react/16/solid'
 function Hero() {
   return (
-    <div className='mt-50 max-sm:mt-20  max-sm:p-5 lg:pl-50 sm:p-10 menu relative'>
+    <div className='mt-50 max-sm:mt-20  max-sm:p-5 lg:pl-50 sm:p-10 menu relative max-w-[1000px]'>
         <div>
             <div className={`${FiraCode.className} text-sm text-[#9893E2] max-sm:text-xs`}><span>Hi, my name is</span></div>
         </div>
@@ -17,8 +18,9 @@ function Hero() {
             </p>
         </div>
         <div className='mt-10'>
-            <VioletButton />
+            <VioletButton title='Download my CV' Icon={ArrowDownTrayIcon}/>
         </div>
+        <div className='hero_light w-150 h-150 rounded-full bg-violet-600 top-0 absolute right-0 blur-[120px] opacity-15 -z-10'></div>
     </div>
   )
 }
