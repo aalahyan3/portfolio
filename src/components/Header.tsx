@@ -3,15 +3,22 @@ import Link from 'next/link'
 import { FiraCode, Quantico } from '../fonts/fonts'
 import React, { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
+import { log } from 'console';
 
 
 
 function Header() {
   const [currSection, setcurrSection] = useState('default');
   const [menuOpen, setMenuOpen] = useState(false);
-  function switchStates(curr:string){
+  function switchStates(curr:string, scroll:boolean){
     setMenuOpen(!menuOpen);
     setcurrSection(curr);
+    if (scroll)
+        ScrollAllthewayDown();
+  }
+  function ScrollAllthewayDown(){
+    window.scrollTo({top:document.body.scrollHeight, behavior: 'smooth'})
+    console.log("scrolled")
   }
   return (
     <div className='flex justify-between items-center relative max-md:block z-10'>
@@ -23,19 +30,19 @@ function Header() {
          border-gray-700 max-md:w-1/2 max-md:h-screen max-md:bg-[#141235] max-md:text-sm`}>
           <ol className='flex justify-between max-md:flex-col max-md:gap-10'>
             <li className=''>
-            <a href='#about' className={`block p-4 ${currSection == 'about' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('about')}>
+            <a href='#about' className={`block p-4 ${currSection == 'about' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('about', false)}>
             <span className='text-purple'>01. </span>About</a>
             </li>
             <li className=''>
-            <a href='#exp' className={`block p-4 ${currSection == 'exp' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('exp')}>
+            <a href='#exp' className={`block p-4 ${currSection == 'exp' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('exp', false)}>
             <span className='text-purple'>02. </span>Experience</a>
             </li>
             <li className=''>
-            <a href='#projects' className={`block p-4 ${currSection == 'projects' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('projects')}>
+            <a href='#projects' className={`block p-4 ${currSection == 'projects' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('projects', false)}>
             <span className='text-purple'>03. </span>Projects</a>
             </li>
             <li className=''>
-            <a href='#contact' className={`block p-4 ${currSection == 'contact' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('contact')}>
+            <a href='#contact' className={`block p-4 ${currSection == 'contact' ? 'text-purple' : 'text-[#C1BDFF]'}`} onClick={()=>switchStates('contact', false)}>
             <span className='text-purple'>04. </span>Contact</a>
             </li>
           </ol>

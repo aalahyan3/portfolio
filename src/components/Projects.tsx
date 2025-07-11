@@ -22,21 +22,21 @@ const projects = [
     {
         name: "moovie-hub",
         description: "A React frontend app that uses the TMDB API to show movie details and lets users watch trailers. It fetches data like titles, images, and ratings, and displays them in a clean, easy-to-use interface.",
-        tags:"React . Front-end . apis",
+        tags:"React . Front-end . API",
         repoLink: "https://github.com/aalahyan3/moovie_hub",
         liveLink: null
     },
     {
         name: "gtkm",
         description: "basic Full stack training, A user sign in and see other users data based on his permessions",
-        tags:"React . Express . Full-stack . MongoDb",
+        tags:"React . Express . MongoDb",
         repoLink: "https://github.com/aalahyan3/gtkm",
         liveLink: "https://moovie-hub.vercel.app/"
     },
     {
         name: "stockify",
         description: "backend application designed to manage and track stock items for businesses or personal use. It allows admins to perform CRUD (Create, Read, Update, Delete) operations on stock data and provides secure authentication for users.",
-        tags:"Node.js . Express . Full-stack . PostgreSQL . JWT",
+        tags:"Express . PostgreSQL . JWT",
         repoLink: "https://github.com/aalahyan3/gtkm",
         liveLink: null
     }
@@ -46,17 +46,17 @@ const projects = [
 const ProjectCard = ({project}: {project: Project}) =>
     {
         return(
-            <div className='w-80 h-80 bg-[#191736] rounded-xl p-4 hover:scale-105 transition-all duration-500 ease-in-out shadow-sm shadow-violet-900'>
-                <div className='flex items-center justify-between'>
-                    <div className=''>
+            <div className='w-70 h-70 bg-[#191736] rounded-xl p-4 hover:scale-105 transition-all duration-500 ease-in-out shadow-sm shadow-violet-900'>
+                <div className='flex items-center'>
+                    <div className='w-1/4'>
                         <Image src={"/folderIcon.svg"} height={30} width={30} alt='icon'/>
                     </div>
-                    <div className={`text-xs text-gray-400 ${FiraCode.className}`}>
+                    <div className={`w-3/4 text-[10px] text-end text-gray-400 ${FiraCode.className}`}>
                         <span>{project.tags}</span>
                     </div>
                 </div>
-                <div className='min-h-2/3 overflow-auto'>
-                    <div className='mt-10 text-2xl font-bold'>
+                <div className='min-h-1/2 max-h-1/2 mt-10 project-area overflow-auto'>
+                    <div className='text-2xl font-bold'>
                         <h1>{project.name}</h1>
                     </div>
                     <div className='mt-4 text-sm text-gray-300'>
@@ -64,7 +64,7 @@ const ProjectCard = ({project}: {project: Project}) =>
                     </div>
                 </div>
                 <div className='w-full h-px bg-gray-500 mt-6 opacity-40'></div>
-                <div className='flex justify-end gap-4 mt-4'>
+                <div className='flex justify-end gap-4 mt-3'>
                     <Link href={project.repoLink}><FaGithub className='text-2xl text-gray-400'/></Link>
                     {project.liveLink && <Link href={project.liveLink}><FiExternalLink className='text-2xl text-gray-400'/></Link>}
                 </div>
@@ -74,13 +74,13 @@ const ProjectCard = ({project}: {project: Project}) =>
 
 function Projects() {
   return (
-    <section id="projects" className={`p-6  mt-20 max-w-[1400px] m-auto ${Inter.className}`}>
+    <section id="projects" className={`mt-20 p-6 max-w-[1000px] m-auto ${Inter.className}`}>
         <div>
             <Title title='Projects i worked on' order={3}/>
         </div>
         <div className='flex justify-center w-full'>
 
-            <div className='inline-flex flex-wrap mt-10 gap-x-5 gap-y-5 justify-start'>
+            <div className='inline-flex flex-wrap mt-10 gap-x-5 gap-y-5 justify-start max-md:justify-center'>
                 {
                     projects.map((project, index) =>
                     {

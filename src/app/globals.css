@@ -52,7 +52,14 @@ body {
   padding: 0 10px 10px 0;
   transition: all ease 300ms;
 }
-.image-box:hover{
 
-
+.project-area::-webkit-scrollbar{
+  background-color: #48484846;
+  width: 2px;
 }
+
+.project-area::-webkit-scrollbar-thumb{
+  background-color: #5e52ff8e;
+}
+
+
