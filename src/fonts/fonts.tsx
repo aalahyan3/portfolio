@@ -17,5 +17,6 @@ export const Inter = InterFont({
 export const Quantico = QuanticoFont({
     weight: ['400', '700'],
     variable: '--font-quantico',
-    display: 'swap'
+    display: 'swap',
+    subsets: ['latin']
 })
