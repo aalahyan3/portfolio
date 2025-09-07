@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { FiraCode, Quantico, Inter } from "@/fonts/fonts";
-
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "aalahyan3",
@@ -22,6 +22,7 @@ export default function RootLayout({
         className={`${Inter.variable} ${Quantico.variable} ${FiraCode.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
