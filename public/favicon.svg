@@ -1,0 +1,9 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E52FF"/>
+      <stop offset="100%" stop-color="#8B7FFF"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 15 L80 85 L68 85 L62 68 L38 68 L32 85 L20 85 L50 15 Z M43 48 L57 48 L50 30 Z" fill="url(#purpleGrad)" stroke="#5E52FF" stroke-width="1"/>
+</svg>

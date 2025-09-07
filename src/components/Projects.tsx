@@ -24,14 +24,14 @@ const projects = [
         description: "A React frontend app that uses the TMDB API to show movie details and lets users watch trailers. It fetches data like titles, images, and ratings, and displays them in a clean, easy-to-use interface.",
         tags:"React . Front-end . API",
         repoLink: "https://github.com/aalahyan3/moovie_hub",
-        liveLink: null
+        liveLink: "https://moovie-hub.vercel.app/"
     },
     {
         name: "gtkm",
         description: "basic Full stack training, A user sign in and see other users data based on his permessions",
         tags:"React . Express . MongoDb",
         repoLink: "https://github.com/aalahyan3/gtkm",
-        liveLink: "https://moovie-hub.vercel.app/"
+        liveLink: null
     },
     {
         name: "stockify",
@@ -39,6 +39,13 @@ const projects = [
         tags:"Express . PostgreSQL . JWT",
         repoLink: "https://github.com/aalahyan3/gtkm",
         liveLink: null
+    },
+    {
+        name: "multi",
+        description: "full-stack web application for a chatting platform.it is built with next.js and provides secure authentication using google OAuth and real-time chatting using web sockets",
+        tags:"OAuth . Sockets . next.js",
+        repoLink: "https://github.com/aalahyan3/multi",
+        liveLink: "https://multichat.up.railway.app"
     }
 
 ]

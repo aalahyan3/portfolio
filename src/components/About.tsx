@@ -16,7 +16,9 @@ const programming_languages = [
     { name: "PostgreSQL", link: "https://www.postgresql.org" },
     { name: "Javascript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
     { name: "TypeScript", link: "https://www.typescriptlang.org" },
-    { name: "Node.js", link: "https://nodejs.org" }
+    { name: "Node.js", link: "https://nodejs.org" },
+    { name: "Java", link: "https://www.java.com/en/" },
+    { name: "Spring Boot", link: "https://spring.io/" }
 ]
 
 const Programminglanguage = ({ language, link }: { language: string, link: string }) => {

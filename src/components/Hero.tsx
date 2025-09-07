@@ -14,7 +14,7 @@ function Hero() {
         <div className={`${Inter.className} mt-3 `}>
             <h2 className='text-6xl text-[#bab9ce6b] font-semibold max-lg:text-5xl max-sm:text-2xl max-md:text-4xl'>I build things for the web</h2>
             <p className={`text-[#C2C2C2] md:w-1/2 mt-2 text-sm max-w-[800px] max-sm:text-xs`}>
-            I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at 1337
+            I’m a software engineer specializing in building exceptional digital experiences. Currently, I’m focused on improving my skills at different levels along with my cursus at 1337 Coding School
             </p>
         </div>
         <div className='mt-10'>

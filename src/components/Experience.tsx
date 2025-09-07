@@ -17,66 +17,6 @@ const exp = [
 			'Developed full-stack applications and implemented Docker containers, microservices, and RESTful APIs in later stages.',
 			'Gained strong problem-solving skills, autonomy, and the ability to learn and adapt quickly in unfamiliar technical domains.'
 		]
-	},
-	{
-		tabName: "frontend internship",
-		company: "DeltaTech Solutions",
-		role: "Frontend Intern",
-		from: "Jun 2024",
-		to: "Sep 2024",
-		tasks: [
-			'Built interactive UI components using React and TypeScript.',
-			'Implemented responsive layouts with Tailwind CSS.',
-			'Integrated REST APIs for real-time content updates.'
-		]
-	},
-	{
-		tabName: "freelance work",
-		company: "Self-Employed",
-		role: "Web Developer",
-		from: "Jan 2024",
-		to: "May 2024",
-		tasks: [
-			'Created landing pages and portfolio sites for local businesses.',
-			'Customized WordPress themes and deployed on shared hosting.',
-			'Worked with Figma designs and converted them into live websites.'
-		]
-	},
-	{
-		tabName: "backend bootcamp",
-		company: "CodeCrafters Bootcamp",
-		role: "Backend Trainee",
-		from: "Sep 2023",
-		to: "Dec 2023",
-		tasks: [
-			'Learned Node.js, Express, and PostgreSQL through guided projects.',
-			'Built authentication systems and RESTful API endpoints.',
-			'Deployed a simple blog app with Docker and tested with Postman.'
-		]
-	},
-	{
-		tabName: "university project",
-		company: "ENSIAS",
-		role: "Student Developer",
-		from: "Mar 2023",
-		to: "Jun 2023",
-		tasks: [
-			'Designed and implemented a library management system in Java.',
-			'Used MySQL for database storage and Swing for GUI.',
-			'Collaborated in a team of 4 using Git and Agile methods.'
-		]
-	},
-	{
-		tabName: "linux scripting course",
-		company: "OpenEdu Online",
-		role: "Learner",
-		from: "Jan 2023",
-		to: "Feb 2023",
-		tasks: [
-			'Wrote bash scripts to automate file organization and backups.',
-			'Worked with crontab and system monitoring tools.',
-			'Understood file permissions, piping, and redirection in depth.'
-		]
 	}
 ]
 
