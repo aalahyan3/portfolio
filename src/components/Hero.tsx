@@ -18,7 +18,7 @@ function Hero() {
             </p>
         </div>
         <div className='mt-10'>
-            <VioletButton title='Download my CV' Icon={ArrowDownTrayIcon} link='/'/>
+            <VioletButton title='Download my CV' Icon={ArrowDownTrayIcon} link='cv'/>
         </div>
         <div className='hero_light w-150 h-150 rounded-full bg-violet-600 top-0 absolute right-0 blur-[120px] opacity-15 -z-10'></div>
     </div>
