@@ -3,8 +3,9 @@ import Link from "next/link";
 import { FiraCode, Quantico } from "../fonts/fonts";
 import React, { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+import { HeaderSection, HeroSection } from "@/lib/types/ContentType";
 
-function Header() {
+function Header({data}: {data: HeaderSection | undefined}) {
   const [currSection, setCurrSection] = useState("default");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -59,10 +60,10 @@ function Header() {
             <nav className={`${FiraCode.className} hidden md:block`}>
               <ol className="flex space-x-8">
                 {[
-                  { id: 'about', num: '01', label: 'About' },
-                  { id: 'exp', num: '02', label: 'Experience' },
-                  { id: 'projects', num: '03', label: 'Projects' },
-                  { id: 'contact', num: '04', label: 'Contact' }
+                  { id: 'about', num: '01', label: data.about},
+                  { id: 'exp', num: '02', label: data.experience },
+                  { id: 'projects', num: '03', label: data.projects },
+                  { id: 'contact', num: '04', label: data.contact }
                 ].map(({ id, num, label }) => (
                   <li key={id}>
                     <button
