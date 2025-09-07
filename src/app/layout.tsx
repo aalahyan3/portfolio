@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${Inter.variable} ${Quantico.variable} ${FiraCode.variable} antialiased`}
       >
         {children}
-        <Analytics />
+        <Analytics /> 
       </body>
     </html>
   );
