@@ -14,8 +14,7 @@ function Header({data}: {data: HeaderSection}) {
   
   const router = useRouter();
   const pathname = usePathname();
-  
-  // Detect current language from pathname
+
   const currentLang = pathname.startsWith('/fr') ? 'fr' : 'en';
 
   useEffect(() => {
@@ -26,7 +25,6 @@ function Header({data}: {data: HeaderSection}) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close language menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Element;
@@ -120,8 +118,6 @@ function Header({data}: {data: HeaderSection}) {
                   ))}
                 </ol>
               </nav>
-
-              {/* Language Toggle - Desktop */}
               <div className="lang-toggle-container relative">
                 <button
                   className="group relative px-4 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 text-[#C1BDFF] hover:text-[#5E52FF] hover:bg-[#5E52FF]/10 flex items-center space-x-2"
@@ -133,8 +129,6 @@ function Header({data}: {data: HeaderSection}) {
                   </span>
                   <div className="absolute inset-0 bg-[#5E52FF]/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-
-                {/* Language Dropdown */}
                 <div className={`absolute top-full right-0 mt-2 w-48 bg-[#141235] border border-[#5E52FF]/30 rounded-xl shadow-2xl shadow-[#5E52FF]/20 backdrop-blur-lg transition-all duration-300 ${
                   langMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                 }`}>
@@ -183,7 +177,6 @@ function Header({data}: {data: HeaderSection}) {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <div className={`md:hidden fixed inset-0 z-40 transition-all duration-500 ${
           menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}>
@@ -221,8 +214,6 @@ function Header({data}: {data: HeaderSection}) {
                       </button>
                     </li>
                   ))}
-
-                  {/* Language Toggle - Mobile */}
                   <li className={`transform transition-all duration-500 ${
                     menuOpen ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                   }`} style={{ transitionDelay: '400ms' }}>
