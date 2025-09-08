@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FiraCode, Inter } from '@/fonts/fonts'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import Link from 'next/link'
+import { AboutSection } from '@/lib/types/ContentType'
 
 const programming_languages = [
     { name: "React", link: "https://react.dev" },
@@ -32,11 +33,11 @@ const Programminglanguage = ({ language, link }: { language: string, link: strin
     )
 }
 
-function About() {
+function About({data}: {data: AboutSection}) {
     return (
-        <section className='p-6 max-w-[1000px] m-auto' id='about'>
+        <section className='p-6 mt-10 max-w-[1000px] m-auto' id='about'>
             <div>
-                <Title title='About Me' order={1} />
+                <Title title={data.title} order={1} />
             </div>
             <div className='flex flex-col mt-10 md:flex-row-reverse gap-20 items-center md:items-start'>
                 <div className='image-box bg-transparent w-60 sm:w-80 md:w-100'>
@@ -53,18 +54,12 @@ function About() {
                 </div>
                 <div className='md:max-w-2/3 '>
                     <p className={`${Inter.className} text-[#a4a4a4] text-sm md:text-base`}>
-                        I'm a developer with solid knowledge of front-end technologies and design
-                        principles, but my main focus is on backend development and microservices
-                        architecture. I enjoy building scalable systems, working with APIs,
-                        and structuring clean backend logic. Alongside my core backend work,
-                        I'm comfortable using tools like Docker and writing scripts in
-                        Python when needed. I approach every project with a practical
-                        mindset and a strong drive to create efficient, reliable software.
+                        {data.about}
                     </p>
                 </div>
             </div>
             <div className='mt-4'>
-                <p className={` ${Inter.className} text-[#a4a4a4] text-sm md:text-base`}>some programming languages and technologies i recently used:</p>
+                <p className={` ${Inter.className} text-[#a4a4a4] text-sm md:text-base`}>{data.some_programming_languages}:</p>
                 <div className='flex flex-wrap mt-4'>
                     {programming_languages.map((lang, index) => (
                         <Programminglanguage language={lang.name} link={lang.link} key={index} />

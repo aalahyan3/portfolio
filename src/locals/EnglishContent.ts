@@ -2,7 +2,6 @@ import ContentType from "@/lib/types/ContentType";
 
 const  EnglishContent : ContentType = 
 {
-    titles: { about: "About Me", exp: "My Experience", projets: "Projects i worked on", contact: "Let's Connect" },
     header: {
         about: "About",
         experience: "Experience",
@@ -16,12 +15,13 @@ const  EnglishContent : ContentType =
         download_cv: "Download my CV"
     },
     about: {
+        title: "About me",
         about: "I'm a developer with solid knowledge of front-end technologies and design principles, but my main focus is on backend development and microservices architecture. I enjoy building scalable systems, working with APIs, and structuring clean backend logic. Alongside my core backend work, I'm comfortable using tools like Docker and writing scripts in Python when needed. I approach every project with a practical mindset and a strong drive to create efficient, reliable software.",
         some_programming_languages: "some programming languages and technologies i recently used"
     },
-    experiences: [
+    experiences: {title: "My Experience" , exps: [
         {
-            tabNam: "common core",
+            tabName: "common core",
             company: "1337 Coding School",
             role: "Junior developper",
             from: "Oct 2024",
@@ -32,8 +32,8 @@ const  EnglishContent : ContentType =
                 "Gained strong problem-solving skills, autonomy, and the ability to learn and adapt quickly in unfamiliar technical domains."
             ]
         }
-    ],
-    projects: [
+    ]},
+    projects: { title: "Projects i worked on", projs:[
             {
                 name: "minishell",
                 description: "A custom Unix shell in C with support for pipes, redirections, and built-in commands. Handled parsing, process management, and signals to replicate basic bash behavior.",
@@ -69,8 +69,9 @@ const  EnglishContent : ContentType =
                 repoLink: "https://github.com/aalahyan3/multi",
                 liveLink: "https://multichat.up.railway.app"
             }
-    ],
+    ]},
     contact: {
+        title: "let's connect",
         get_in_touch: "Get In Touch",
         motivate: "i always check my inbox, if you have any questions or just wanna say hello go ahead and send me an email",
         say_hello: "Say Hi!!"
