@@ -1,0 +1,7 @@
+# robots.txt for allowing all search engines to crawl the site
+
+User-agent: *
+Disallow:
+
+
+Sitemap: https://aalahyan3.tech/sitemap.xml
