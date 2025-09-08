@@ -17,17 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
           <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-        <script type="application/ld+json">
-          {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Ayoub Alahyane",
-            "url": "https://aalahyan3.tech",
-            "sameAs": [
-              "https://github.com/aalahyan3"
-            ]
-          }
-      </script>
+        
       </head>
       <body
         className={`${Inter.variable} ${Quantico.variable} ${FiraCode.variable} antialiased`}
