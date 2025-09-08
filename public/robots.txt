@@ -3,5 +3,3 @@
 User-agent: *
 Disallow:
 
-
-Sitemap: https://aalahyan3.tech/sitemap.xml
