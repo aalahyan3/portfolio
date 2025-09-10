@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className='mt-6'>
         <div className='flex items-center justify-center'>
-             <Link href="github.com/aalahyan3" className='p-4 text-violet-300 hover:text-violet-600  text-xl'><FiGithub /></Link> 
+             <Link href="https://github.com/aalahyan3" className='p-4 text-violet-300 hover:text-violet-600  text-xl'><FiGithub /></Link> 
              <Link href="https://www.linkedin.com/in/a-alahyane/" className='p-4 text-violet-300 hover:text-violet-600 text-xl'><FiLinkedin /></Link> 
         </div>
         <div className='mt-6'>

@@ -13,7 +13,7 @@ async function getPageContent(language: string){
     switch (language)
     {
         case "en": return (await import("@/locals/EnglishContent")).default;
-        case "fr": return (await import("@/locals/FrenchContent")).default; // Fixed: should be FrenchContent for French
+        case "fr": return (await import("@/locals/FrenchContent")).default;
         default:
             throw new Error("Unsupported language");
     }

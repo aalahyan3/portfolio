@@ -10,19 +10,19 @@ const FrenchContent : ContentType =
     },
     hero: {
         hi_my_name_is: "Salut, je m'appelle",
-        i_do_this: "Je construis des choses pour le web",
-        i_am_right_now: "Je suis ingénieur logiciel spécialisé dans la création d'expériences numériques exceptionnelles. Actuellement, je me concentre sur l'amélioration de mes compétences à différents niveaux tout en suivant mon cursus à l'école de codage 1337",
+        i_do_this: "Je façonne le web",
+        i_am_right_now: "Je suis ingénieur logiciel spécialisé dans la création d'expériences numériques exceptionnelles. Actuellement, je me concentre sur l'amélioration de mes compétences à différents niveaux tout en suivant mon cursus à 1337 Coding School",
         download_cv: "Télécharger mon CV"
     },
     about: {
-        title: "À propos de moi",
+        title: "À propos",
         about: "Je suis un développeur avec de solides connaissances en technologies front-end et en principes de design, mais mon focus principal est le développement backend et l'architecture de microservices. J'aime construire des systèmes évolutifs, travailler avec des APIs et structurer une logique backend propre. En parallèle de mon travail backend principal, je maîtrise des outils comme Docker et j'écris des scripts en Python quand c'est nécessaire. J'aborde chaque projet avec un état d'esprit pratique et une forte motivation pour créer des logiciels efficaces et fiables.",
         some_programming_languages: "quelques langages de programmation et technologies que j'ai récemment utilisés"
     },
     experiences: {title: "Mon Expérience", exps: [
         {
-            tabName: "tronc commun",
-            company: "École de Codage 1337",
+            tabName: "common core",
+            company: "1337 Coding school",
             role: "Développeur Junior",
             from: "Oct 2024",
             to: "Présent",
@@ -71,8 +71,8 @@ const FrenchContent : ContentType =
             }
     ]},
     contact: {
-        title: "connectons-nous",
-        get_in_touch: "Entrer en Contact",
+        title: "Me contacter",
+        get_in_touch: "Entrons en contact",
         motivate: "je vérifie toujours ma boîte de réception, si vous avez des questions ou voulez juste dire bonjour, n'hésitez pas à m'envoyer un email",
         say_hello: "Dites Salut !!"
     }
