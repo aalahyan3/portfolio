@@ -40,10 +40,10 @@ function About({data}: {data: AboutSection}) {
                 <Title title={data.title} order={1} />
             </div>
             <div className='flex flex-col mt-10 md:flex-row-reverse gap-20 items-center md:items-start'>
-                <div className='image-box bg-transparent w-60 sm:w-80 md:w-100'>
-                    <div className="relative rounded-3xl w-full aspect-square overflow-hidden bg-gray-900">
+                {/* <div className='image-box bg-transparent w-60 sm:w-80 md:w-100'> */}
+                    <div className="w-60 sm:w-80 md:w-100 relative rounded-3xl aspect-square overflow-hidden bg-gray-900">
                         <Image
-                            src="/aalahyan.jpeg"
+                            src="/test.png"
                             alt="me"
                             fill
                             className="object-cover"
@@ -51,7 +51,7 @@ function About({data}: {data: AboutSection}) {
                         <div className="absolute inset-0 bg-gradient-to-tr from-[#5E52FF]/30 via-transparent to-blue-400/20"></div>
                         <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
-                </div>
+                {/* </div> */}
                 <div className='md:max-w-2/3 '>
                     <p className={`${Inter.className} text-[#a4a4a4] text-sm md:text-base`}>
                         {data.about}

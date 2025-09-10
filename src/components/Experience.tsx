@@ -5,21 +5,6 @@ import { FiraCode, Inter } from '@/fonts/fonts'
 import { link } from 'fs'
 import { CheckIcon } from '@heroicons/react/16/solid'
 import { ExpSecion } from '@/lib/types/ContentType'
-// const exp = [
-// 	{
-// 		tabName: "common core",
-// 		company: "1337 Coding School",
-//         link: "1337.ma/fr",
-// 		role: "Junior developper",
-// 		from: "Oct 2024",
-// 		to: "Present",
-// 		tasks: [
-// 			'Completed over 15+ real-world projects covering low-level programming in C, memory management, and data structures.',
-// 			'Developed full-stack applications and implemented Docker containers, microservices, and RESTful APIs in later stages.',
-// 			'Gained strong problem-solving skills, autonomy, and the ability to learn and adapt quickly in unfamiliar technical domains.'
-// 		]
-// 	}
-// ]
 
 
 function Experience({data}: {data: {title:string, exps: ExpSecion[]}}) {
