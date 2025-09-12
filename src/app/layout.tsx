@@ -16,6 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="alternate" href="https://aalahyan3.tech/en" hrefLang="en" />
+        <link rel="alternate" href="https://aalahyan3.tech/fr" hrefLang="fr" />
+        <link rel="alternate" href="https://aalahyan3.tech/en" hrefLang="x-default" />
           <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
           <script
           type="application/ld+json"
